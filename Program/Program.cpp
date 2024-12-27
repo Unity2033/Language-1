@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <queue>
 #include <vector>
 
 #define SIZE 8
@@ -8,6 +9,7 @@ using namespace std;
 class Graph
 {
 private:
+	queue<int> queue;
 	bool visited[SIZE];
 	vector<int> graph[SIZE];
 public:
@@ -16,35 +18,37 @@ public:
 		for (int i = 0; i < SIZE; i++)
 		{
 			visited[i] = false;
-		}
+	    }
 	}
 
-	void InsertEdge(int vertex, int edge)
+	void Insert(int vertex, int edge)
 	{
 		graph[vertex].push_back(edge);
 		graph[edge].push_back(vertex);
 	}
-};
 
+};
 
 int main()
 {
-#pragma region 깊이 우선 탐색(Depth First Search)
-	// root 노드에서 시작해서 다음 분기로 넘어가기 전에
-	// 해당 분기를 완벽하게 탐색하는 방법입니다.
+#pragma region 너비 우선 탐색
+	// 시작 정점을 방문한 후 시작 정점에 인접한
+	// 모든 정점들을 우선 방문하는 방법입니다.
 
-	// 깊이 우선 탐색은 스택 자료 구조를 사용합니다.
-
-	// 1. 시작 노드를 스택에 넣고 방문 처리를 합니다.
-
-	// 2. 스택의 최상단 노드에 방문하지 않은 인접 노드가 있으면
-	//    그 노드를 스택에 넣고 방문 처리합니다.
-
-	// 3. 방문하지 않은 인접 노드가 없으면 스택에서 최상단 노드를 꺼냅니다.
-
-	// 4. 더 이상 2번의 과정을 수행할 수 없을 때까지 반복합니다.
+	// 더 이상 방문하지 않은 정점이 없을 때까지
+	// 방문하지 않은 모든 정점들에 대해서도 너비 우선 탐색을 적용합니다.
 
 	Graph graph;
+
+	graph.Insert(1, 2);
+	graph.Insert(1, 3);
+
+	graph.Insert(2, 4);
+	graph.Insert(2, 5);
+
+	graph.Insert(3, 6);
+	graph.Insert(3, 7);
+
 
 #pragma endregion
 
