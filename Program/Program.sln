@@ -43,6 +43,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class18th (Union Find)", ".
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class19th (Topology Sort)", "..\Class19th (Topology Sort)\Class19th (Topology Sort).vcxproj", "{2CFA66FE-D667-4D61-9684-205C6FB3A4FC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class20th (Minimum Spanning Tree)", "..\Class20th (Minimum Spanning Tree)\Class20th (Minimum Spanning Tree).vcxproj", "{CAB752D3-492F-4AAB-8F8B-8F92C24BCCAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -211,6 +213,14 @@ Global
 		{2CFA66FE-D667-4D61-9684-205C6FB3A4FC}.Release|x64.Build.0 = Release|x64
 		{2CFA66FE-D667-4D61-9684-205C6FB3A4FC}.Release|x86.ActiveCfg = Release|Win32
 		{2CFA66FE-D667-4D61-9684-205C6FB3A4FC}.Release|x86.Build.0 = Release|Win32
+		{CAB752D3-492F-4AAB-8F8B-8F92C24BCCAA}.Debug|x64.ActiveCfg = Debug|x64
+		{CAB752D3-492F-4AAB-8F8B-8F92C24BCCAA}.Debug|x64.Build.0 = Debug|x64
+		{CAB752D3-492F-4AAB-8F8B-8F92C24BCCAA}.Debug|x86.ActiveCfg = Debug|Win32
+		{CAB752D3-492F-4AAB-8F8B-8F92C24BCCAA}.Debug|x86.Build.0 = Debug|Win32
+		{CAB752D3-492F-4AAB-8F8B-8F92C24BCCAA}.Release|x64.ActiveCfg = Release|x64
+		{CAB752D3-492F-4AAB-8F8B-8F92C24BCCAA}.Release|x64.Build.0 = Release|x64
+		{CAB752D3-492F-4AAB-8F8B-8F92C24BCCAA}.Release|x86.ActiveCfg = Release|Win32
+		{CAB752D3-492F-4AAB-8F8B-8F92C24BCCAA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
