@@ -47,6 +47,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class20th (Minimum Spanning
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class21th (Dijkstra)", "..\Class21th (Dijkstra)\Class21th (Dijkstra).vcxproj", "{07F6D89E-C41D-4C41-B355-EED4BF76D326}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class22th (Back Tracking)", "..\Class22th (Back Tracking)\Class22th (Back Tracking).vcxproj", "{FCADF13A-A888-46F2-8560-94F27DB41AF5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -231,6 +233,14 @@ Global
 		{07F6D89E-C41D-4C41-B355-EED4BF76D326}.Release|x64.Build.0 = Release|x64
 		{07F6D89E-C41D-4C41-B355-EED4BF76D326}.Release|x86.ActiveCfg = Release|Win32
 		{07F6D89E-C41D-4C41-B355-EED4BF76D326}.Release|x86.Build.0 = Release|Win32
+		{FCADF13A-A888-46F2-8560-94F27DB41AF5}.Debug|x64.ActiveCfg = Debug|x64
+		{FCADF13A-A888-46F2-8560-94F27DB41AF5}.Debug|x64.Build.0 = Debug|x64
+		{FCADF13A-A888-46F2-8560-94F27DB41AF5}.Debug|x86.ActiveCfg = Debug|Win32
+		{FCADF13A-A888-46F2-8560-94F27DB41AF5}.Debug|x86.Build.0 = Debug|Win32
+		{FCADF13A-A888-46F2-8560-94F27DB41AF5}.Release|x64.ActiveCfg = Release|x64
+		{FCADF13A-A888-46F2-8560-94F27DB41AF5}.Release|x64.Build.0 = Release|x64
+		{FCADF13A-A888-46F2-8560-94F27DB41AF5}.Release|x86.ActiveCfg = Release|Win32
+		{FCADF13A-A888-46F2-8560-94F27DB41AF5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
