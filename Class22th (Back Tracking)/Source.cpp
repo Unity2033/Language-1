@@ -2,23 +2,24 @@
 
 using namespace std;
 
-void Permutation(int n, int list[], int depth)
+int Combinations(int currentProduct, int start, int N)
 {
-    if (depth == n)
-    {  // (1) 모든 원소가 선택되었을 때 출력
-        for (int i = 0; i < n; i++)
+    if (currentProduct == N) return 1;
+    if (currentProduct > N) return 0;
+
+    int count = 0;
+    
+    for (int i = start; i <= 9; ++i) 
+    {
+        if (N % i != 0) 
         {
-            cout << list[i] << " ";
+            continue;
         }
-        cout << "\n";
-        return;
+        
+        count += Combinations(currentProduct * i, i + 1, N);
     }
-    for (int i = depth; i < n; i++)
-    {  // (2) depth부터 n까지 순회
-        std::swap(list[i], list[depth]);  // 원소를 선택하고 순열을 생성
-        Permutation(n, list, depth + 1);  // 재귀 호출
-        std::swap(list[depth], list[i]);  // 백트래킹: 원래대로 복구
-    }
+    
+    return count;
 }
 
 int main()
@@ -33,12 +34,14 @@ int main()
 
     // 해가 될 만한 가능이 있으면 유망하다. (Promising)
     // 유망하지 않은 노드에가지 않는 것     (Pruning)
+    
+    int n;
+    
+    cin >> n;
 
-    int n = 3;
-    int element[] = { 1,2,3 };
-    int depth = 0;
-
-    Permutation(n, element, depth);
+    int result = Combinations(1, 1, n);
+    
+    cout << "경우의 수: " << result << endl;
 
 #pragma endregion
 
