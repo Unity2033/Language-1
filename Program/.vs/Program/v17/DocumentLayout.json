@@ -1,10 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\Program\\",
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\Game-Academy\\Program\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5134C898-F76C-4DA3-A3B5-E233E380839A}|Program.vcxproj|C:\\Users\\Administrator\\Desktop\\Program\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{5134C898-F76C-4DA3-A3B5-E233E380839A}|Program.vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Academy\\Program\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5134C898-F76C-4DA3-A3B5-E233E380839A}|Program.vcxproj|solutionrelative:Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CC44493-5CB2-4DC2-B373-040E022AA538}|..\\Class1th (Compile)\\Class1th (Compile).vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Academy\\Class1th (Compile)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +17,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,13 +41,26 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Source.c",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Academy\\Class1th (Compile)\\Source.c",
+              "RelativeDocumentMoniker": "..\\Class1th (Compile)\\Source.c",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Academy\\Class1th (Compile)\\Source.c",
+              "RelativeToolTip": "..\\Class1th (Compile)\\Source.c",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-04-11T11:08:10.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Source.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Program\\Source.c",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Academy\\Program\\Source.c",
               "RelativeDocumentMoniker": "Source.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Program\\Source.c",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Academy\\Program\\Source.c",
               "RelativeToolTip": "Source.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAAAFgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-04-10T12:08:26.044Z",
               "EditorCaption": ""
