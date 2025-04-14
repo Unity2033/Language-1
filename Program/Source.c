@@ -2,101 +2,107 @@
 
 void main()
 {
-#pragma region 변수
-	// 데이터를 저장할 수 있는 메모리 공간을 생성하는 것입니다.
+#pragma region 산술 연산자
 
-#pragma region 자료형
-	// 데이터를 저장하기 위해 데이터의 형태를 정해주는 것입니다.
-
-	// 자료형은 각각의 자료형마다 크기가 정해져 있으며, 자료형의
-	// 크기는 바이트 단위로 이루어져 있으며, 자료형의 경우 자료형에
-	// 따라 저장할 수 있는 값의 종류와 범위가 결정됩니다.
-#pragma endregion
-
-#pragma region 대입 연산자
-	// 변수에 값을 저장할 수 있는 연산자입니다.
-
-	// 대입 연산자의 기준으로 왼쪽에 있는 변수는 식별자를
-	// 가지고 있기 때문에 다른 값을 복사 받을 수 있습니다.
-#pragma endregion
-
-#pragma region 변수의 이름 규칙
-
-	// 1. 변수의 이름 대소문자를 구분합니다.
-	// ex) int health;
-	// ex) int HEALTH;
-	
-	// 2. 변수의 이름으로 예약어를 사용할 수 없습니다.
-	// ex) int int;
-	
-	// 3. 변수의 이름에는 공백이 포함될 수 없습니다.
-	// ex) int time Delta;
-	
-	// 4. 변수의 이름으로 특수 문자 "_", "$"만 사용할 수 있습니다.
-	// ex) int under_Score;
-	// ex) int currentRoom$;
-
-	// 5. 변수의 이름은 숫자로 시작할 수 없습니다.
-	// ex) int 5error;
-	// ex) int error2022;
-
-#pragma endregion
-
-#pragma region 서식 지정자
-	// 변수의 값을 출력하기 위한 자료형의 정보를 명시적으로 
-	// 지정해주는 것입니다.
-
-	// 서식 지정자의 경우 하나의 표준 출력 함수에 여러 개의
-	// 서식을 넣을 수 있으며, 서식 지정자의 순서는 왼쪽에서
-	// 부터 시작합니다.
-
-	// 서식 지정자는 각각의 서식에 따라 원하는 데이터를 출력
-	// 할 수 있으며, 서식과 변수의 형태가 일치하지 않으면
-	// 원하는 값이 출력되지 않습니다.
-
-#pragma endregion
-
-	// char character = 'A';
+	// int storage1 = 0;
+	// int storage2 = 0;
+	// int storage3 = 0;
+	// int storage4 = 0;
+	// int storage5 = 0;
 	// 
-	// int integer = 10;
+	// int x = 10;
+	// int y = 5;
+	// int z = 1;
+	// int w = 10;
 	// 
-	// float decimal = 5.5f;
+	// const int constant = 5;
 	// 
-	// printf("character : %c \ninterger : %d \ndecimal : %f\n", character, integer, decimal);
+	// // 1. 변수 = 변수 + 변수
+	// storage1 = x + y;
 	// 
-	// character = 'B';
-	// integer = 25;
-	// decimal = 7.25f;
+	// // 2. 변수 = 변수 - 리터럴 상수
+	// storage2 = z - 1;
 	// 
-	// printf("\n");
+	// // 3. 변수 = 변수 * 심볼릭 상수
+	// storage3 = w * constant;
+	//  
+	// // 4. 변수 = 리터럴 상수 / 리터럴 상수
+	// storage4 = 20 / 5;
+	// 
+	// // 5. 변수 = 심볼릭 상수 % 리터럴 상수
+	// storage5 = constant % 5;
+	// 
+	// printf("storage1의 값 : %d\n", storage1);
+	// printf("storage2의 값 : %d\n", storage2);
+	// printf("storage3의 값 : %d\n", storage3);
+	// printf("storage4의 값 : %d\n", storage4);
+	// printf("storage5의 값 : %d\n", storage5);
 
-	// 변수는 프로그램이 실행되는 동안 값을 바꿀 수 있으며,
-	// 원래 저장되어 있는 값은 새로 저장되는 값에 의해 지워집니다.
-
-	// printf("character : %c\n", character);
-	// printf("interger : %d\n", integer);
-	// printf("decimal : %f\n", decimal);
-	
-	// 변수의 메모리 공간을 프로그램이 실행될 때마다 바뀌며, 여러
-	// 개의 변수가 있을 때 서로 고유의 메모리 공간을 가지고 있습니다.
 #pragma endregion
 
-#pragma region 상수
-	// 프로그램이 실행되는 동안 더 이상 변경할 수 없는
-	// 메모리 공간입니다.
+#pragma region 비트
+	// 데이터를 나타내는 최소의 단위이며, 0 또는 1의
+	// 조합으로 논리 계산을 하는 단위입니다.
 
-	const float pi = 3.141592f;
+#pragma region (10)진수를 (2)진수로 변환하는 과정
+	// 10진수를 1이 될 때까지 계속 2로 나누어 준 다음
+	// 나눈 위치의 나머지 값을 아래에서 위로 순서대로 정렬합니다.
 
-	// 상수의 경우 메모리 공간을 가지고 있지 않은 상수를
-	// 리터럴 상수라고 하며, 메모리 공간을 가지고 있는
-	// 상수를 심볼릭 상수라고 합니다.
-
-	// ex) pi = 6.125f;
-
-	printf("상수의 값 : %f\n", pi);
-
-	// 상수는 메모리 공간을 생성하는 동시에 초기화해야 하며,
-	// 한 번 저장된 값은 더 이상 변경할 수 없습니다.
+	// ex) 23 -> 10111
 #pragma endregion
+
+#pragma region (2)진수를 (10)진수로 변환하는 과정
+	// 1 byte에 2진수로 저장된 값을 2의 제곱으로 나타냅니다.
+
+	// 각각의 비트에 1이 있다면 1과 2의 제곱의 위치를 계산한
+	// 다음 각각의 비트를 모두 더하여 10진수로 나타냅니다.
+#pragma endregion
+
+#pragma region 비트 연산자
+	// 비트 단위로 논리 연산을 수행하기 위해 사용하는 연산자입니다.
+
+#pragma region AND 연산자
+	// 두 개의 피연산자가 모두 1이면 1을 반환하는 연산자입니다.
+
+	// int storage1 = 10; // 0000 1010
+	// int storage2 = 6;  // 0000 0110
+	//                    // ---------
+	//                    // 0000 0010
+	// 
+	// printf("storage1 & storage2 : %d\n", storage1 & storage2);
+
+#pragma endregion
+
+#pragma region OR 연산자
+	// 두 개의 피연산자 중에 하나라도 1이 있다면 1을 반환하는 연산자입니다.
+
+	// int storage3 = 8;  // 0000 1000
+	// int storage4 = 12; // 0000 1100
+	//                    // ---------
+	//                    // 0000 1100
+	// 
+	// printf("storage3 | storage4 : %d\n", storage3 | storage4);
+
+#pragma endregion
+
+#pragma region XOR 연산자
+	// 두 개의 피연산자가 서로 같으면 0을 반환하고, 서로 다르면
+	// 1을 반환하는 연산자입니다.
+
+
+
+#pragma endregion
+
+
+
+#pragma endregion
+
+
+
+
+	// 메모리는 비트 단위로 데이터를 저장할 수 있으며,
+	// 1개의 비트에는 0 또는 1의 값만 저장할 수 있습니다.
+#pragma endregion
+
 
 }
