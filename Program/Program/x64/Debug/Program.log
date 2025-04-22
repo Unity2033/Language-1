@@ -1,3 +1,2 @@
 ﻿  Source.c
-C:\Users\Administrator\Desktop\Game-Academy\Program\Source.c(49,10): warning C4133: '초기화 중': 'int *'과(와) 'float *' 사이의 형식이 호환되지 않습니다.
   Program.vcxproj -> C:\Users\Administrator\Desktop\Game-Academy\Program\x64\Debug\Program.exe
