@@ -2,145 +2,54 @@
 
 void main()
 {
-#pragma region 주소 연산자
-	// 변수의 주소 값을 반환하는 연산자입니다.
+#pragma region 배열
+	// 같은 자료형의 변수들로 이루어진 유한 집합입니다.
 
-	// int data = 10;
+	// int list[5];
 	// 
-	// printf("data변수의 주소 : %p\n", &data);
+	// // 배열의 경우 첫 번째 원소는 0부터 시작합니다.
+	// 
+	// list[0] = 10;
+	// list[1] = 20;
+	// list[2] = 30;
+	// list[3] = 40;
+	// list[4] = 50;
+	// 
+	// for (int i = 0; i < 5; i++)
+	// {
+	// 	list[i] = (i + 1) * 10;
+	// 
+	// 	printf("list[%d] : %d\n", i, list[i]);
+	// }
 
-	// 데이터의 주소는 해당 데이터가 저장된 메모리의 시작 주소를
-	// 의미하며, 메모리의 공간은 1 byte의 크기로 나누어 표현합니다.
-#pragma endregion
+	// 배열의 메모리 공간은 프로그램이 실행되는 동안
+	// 변경할 수 없습니다.
 
-#pragma region scanf 함수
-	// 표준 입력 함수로, 여러 종류의 데이터를 다양한 서식에
-	// 맞추어 입력해주는 함수입니다.
+	//	int array[ ] = { 1, 2, 3, 4, 5 };
+	//	
+	//	int size = sizeof(array) / sizeof(int);
+	//	
+	//	int * pointer = &array;
+	//	
+	//	for (int i = 0; i < size; i++)
+	//	{
+	//		printf("array[%d]의 값 : %d\n", i, array[i]);
+	//	}
+	//	
+	//	// 배열의 크기는 생략할 수 있으며, 초기화 목록에서
+	//	// 설정한 요소에 따라 배열의 크기가 결정됩니다.
+	//	
+	//	printf("배열의 시작 주소 : %p\n", array);
+	//	
+	//	pointer = pointer + 1;
+	//	
+	//	*pointer = 22;
+	//	
+	//	printf("pointer 변수의 값 : %p\n", pointer);
+	//	printf("array[1]의 값 : %d\n", array[1]);
 
-	// int x = 0;
-	// 
-	// printf("x 변수의 값을 입력 : ");
-	// 
-	// // 표준 입력 함수는 입력을 수행할 때까지 다음 작업으로 
-	// // 넘어갈 수 없습니다.
-	// 
-	// scanf_s("%d", &x); 
-	// 
-	// // 버퍼는 데이터가 이동할 때 임시로 저장되는 공간이며,
-	// // 서식 지정자에 따라 입력할 수 있는 데이터의 범위도 결정됩니다.
-	// 
-	// printf("x 변수의 값 : %d\n", x);
-
-	// 표준 입력 함수로 데이터를 입력하게 되면 버퍼에
-	// 데이터를 보관하였다가 입력하는 순간 버퍼 안의
-	// 내용을 프로그램에 전송합니다.
-#pragma endregion
-
-#pragma region 포인터
-	// 메모리의 주소 값을 저장할 수 있는 변수입니다.
-
-	// int storage = 10;
-	// 
-	// int position = 20;
-	// 
-	// int * pointer = &storage;
-	// 
-	// // 포인터가 가리키는 메모리 공간의 자료형은 알 수 없으므로,
-	// // 포인터가 가리키는 메모리의 자료형을 선언해주어야 합니다.
-	// 
-	// printf("storage의 주소 : %p\n", &storage);
-	// printf("pointer의 값 : %p\n", pointer);
-	// printf("pointer의 주소 : %p\n\n", &pointer);
-	// 
-	// *pointer = 99;
-	// 
-	// printf("storage 변수의 값 : %d\n", storage);
-	// printf("pointer 변수가 가리키는 값 : %d\n\n", *pointer);
-	// 
-	// pointer = &position;
-	// 
-	// *pointer = 100;
-	// 
-	// printf("position 변수의 값 : %d\n", position);
-	// printf("pointer의 값 : %p\n", pointer);
-	// printf("pointer 변수가 가리키는 값 : %d\n\n", *pointer);
-	// 
-	// // 포인터 변수도 자신의 메모리 공간을 가지고 있으며,
-	// // 포인터 변수에 변수의 주소를 저장하게 되면 해당 변수
-	// // 의 시작 주소를 가리키게 됩니다.
-	// 
-	// printf("int 크기 : %u\n", sizeof(int));
-	// 
-	// printf("pointer 변수의 크기 : %u\n", sizeof(pointer));
-
-	// 포인터 변수의 크기는 중앙 처리 장치가 한 번에 처리할 
-	// 수 있는 크기로 정해지며, 한 번에 처리할 수 있는 크기는
-	// 운영체제에 따라 크기가 결정됩니다.
-#pragma endregion
-
-#pragma region 범용 포인터
-	// 자료형이 정해지지 않은 상태로 모든 자료형을
-	// 저장할 수 있는 포인터입니다.
-
-	// char character = 'A';
-	// int integer = 10;
-	// float decimal = 1.0f;
-	// 
-	// void * reference = &character;
-	// 
-	// // 범용 포인터는 메모리 주소에 접근해서 값을 변경
-	// // 할 수 없습니다.
-	// 
-	// *(char *)reference = 'B';
-	// 
-	// printf("character 변수의 값 : %c\n", character);
-	// printf("reference 변수의 값 : %p\n\n", reference);
-	// 
-	// reference = &integer;
-	// 
-	// *(int *)reference = 20;
-	// 
-	// printf("integer 변수의 값 : %d\n", integer);
-	// printf("reference 변수의 값 : %p\n\n", reference);
-	// 
-	// reference = &decimal;
-	// 
-	// *(float*)reference = 5.0f;
-	// 
-	// printf("decimal 변수의 값 : %f\n", decimal);
-	// printf("reference 변수의 값 : %p\n\n", reference);
-
-	// 범용 포인터로 변수의 메모리에 접근하려면 범용 포인터가
-	// 가리키는 변수의 자료형으로 형 변환을 해주어야 합니다. 
-#pragma endregion
-
-#pragma region 상수 지시 포인터
-// 포인터가 가리키는 주소에 저장되어 있는 값을 변경할 수 없도록
-// 지정되어 있는 포인터입니다.
-
-// int y = 10;
-// int z = 20;
-// 
-// const int * constPointer = &y;
-// 
-// // *constPointer = 99;
-// 
-// printf("y의 주소 값 : %p\n", &y);
-// printf("constPointer의 값 : %p\n\n", constPointer);
-// 
-// constPointer = &z;
-// 
-// printf("z의 주소 값 : %p\n", &z);
-// printf("constPointer의 값 : %p\n", constPointer);
-
-#pragma endregion
-
-#pragma region 포인터 상수
-// 포인터 변수가 가리키고 있는 주소 값을 변경할 수
-// 없는 포인터입니다.
-
-
-
+	// 배열은 연속적인 메모리 공간을 가지며, 배열의 이름은
+	// 배열의 시작 주소를 가리킵니다.
 #pragma endregion
 
 

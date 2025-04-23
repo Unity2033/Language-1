@@ -101,17 +101,17 @@ void main()
 	// 반복문 안에 새로운 반복문이 들어 있는 형태의
 	// 반복문입니다.
 
-	for (int i = 1; i < 10; i++)
-	{
-		printf("구구단 %d단\n\n", i);
-
-		for (int j = 1; j < 10; j++)
-		{
-			printf("%d x %d = %d\n", i, j, i * j);
-		}
-
-		printf("\n");
-	}
+	//	for (int i = 1; i < 10; i++)
+	//	{
+	//		printf("구구단 %d단\n\n", i);
+	//	
+	//		for (int j = 1; j < 10; j++)
+	//		{
+	//			printf("%d x %d = %d\n", i, j, i * j);
+	//		}
+	//	
+	//		printf("\n");
+	//	}
 
 #pragma endregion
 
