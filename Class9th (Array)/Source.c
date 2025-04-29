@@ -113,4 +113,19 @@ void main()
 	// 열을 의미하고, 뒤에 있는 배열은 행을 의미합니다.
 
 #pragma endregion
+
+#pragma region 아스키 코드
+// 미국 국립 표준 협회에서 표준화한 정보 교환용 
+// 7 bit 부호 체계입니다.
+
+//	char alphabet = 'A';
+//	
+//	printf("alphabet 변수의 10진수 값 : %d\n", alphabet);
+//	
+//	for (int i = 0; i < 26; i++)
+//	{
+//		printf("%c ", 'A' + i);
+//	}
+
+#pragma endregion
 }
