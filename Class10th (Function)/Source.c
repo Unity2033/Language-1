@@ -139,5 +139,14 @@ int main()
 	// 선언하더라도 상황에 따라 일반 함수로 변환되기도 합니다.
 #pragma endregion+
 
+#pragma region 가변 인수 목록
+	// 고정되어 있는 매개 변수 외에 개수가 정해지지 않은
+	// 인수를 추가로 받을 수 있는 인수입니다.
+	
+	
+
+#pragma endregion
+
+
 	return 0;
 }
