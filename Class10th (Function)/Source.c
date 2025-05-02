@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdarg.h>
 
 char Character()
 {
@@ -55,6 +56,30 @@ void Recursion(int count)
 inline void Calculator()
 {
 	printf("Calculator...\n");
+}
+
+void Average(int count, ...)
+{
+	// va_list : 가변 인수의 메모리 주소를 저장하는 포인터 변수입니다.
+	va_list pointer;
+
+	// va_start : 가변 인수를 가져올 수 있도록 포인터를 설정하는 함수입니다.
+	va_start(pointer, count);
+
+	int sum = 0; 
+
+	// va_arg : 가변 인수 포인터에서 특정 자료형의 크기만큼 값을 가져오는 함수입니다.
+	for (int i = 0; i < count; i++)
+	{
+		sum += va_arg(pointer, int);
+	}
+
+	double average = (double)sum / count;
+
+	printf("average : %lf\n", average);
+
+	// va_end : 가변 인수가 끝났을 때 포인터를 NULL로 초기화하는 함수입니다.
+	va_end(pointer);
 }
 
 int main()
@@ -143,10 +168,9 @@ int main()
 	// 고정되어 있는 매개 변수 외에 개수가 정해지지 않은
 	// 인수를 추가로 받을 수 있는 인수입니다.
 	
-	
+	// Average(5, 10, 20, 30, 40, 50);
 
 #pragma endregion
-
 
 	return 0;
 }
