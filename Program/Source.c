@@ -1,29 +1,41 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include "audio.h"
+			  
+struct Object
+{
+	char character;
+	int integer;
+	float decimal;
+};
 
 int main()
 {
-#pragma region 동적 할당
-	// 프로그램을 실행하는 중에 필요한 만큼 메모리를 할당
-	// 하는 작업입니다.
+#pragma region 구조체
+	// 여러 개의 변수를 하나의 집합으로 구조화한 다음
+	// 하나의 객체를 생성하는 것입니다.
 
-	int * pointer = malloc(sizeof(int));
+	// struct Object object = {'B', 10, 6.25f};
+	// 
+	// printf("object의 character : %c\n", object.character);
+	// printf("object의 integer : %d\n", object.integer);
+	// printf("object의 decimal : %f\n\n", object.decimal);
+	// 
+    // // 구조체의 각 멤버는 구조체 선언에서 나타나는 순서대로 초기화됩니다. 
+    // // 이 순서는 초기화 목록의 값들이 왼쪽에서 오른쪽으로 대응되는 방식입니다.
+	// 
+	// object.character = 'A';
+	// object.integer = 100;
+	// object.decimal = 36.5f;
+	// 
+	// printf("object의 character : %c\n", object.character);
+	// printf("object의 integer : %d\n", object.integer);
+	// printf("object의 decimal : %f\n", object.decimal);
 
-	*pointer = 10;
-
-	printf("pointer 변수가 가리키는 값 : %d\n", *pointer);
-
-	// 동적 할당은 실행 시간에 가변적으로 메모리의 크기를 
-	// 변경시킬 수 있으며, 동적으로 메모리의 크기를 할당할 때
-	// 바이트 단위로 지정합니다.
-
-	free(pointer);
-
-	// 동적으로 할당한 메모리는 힙 영역에 보관되어 있으므로,
-	// 사용 끝나면 직접 해제를 해주어야 합니다.
+	// 구조체를 선언하기 전에 구조체는 메모리 공간이 
+	// 생성되지 않으므로, 구조체 내부에 있는 데이터를
+	// 초기화할 수 없습니다.
 
 #pragma endregion
-
 
 	return 0;
 }

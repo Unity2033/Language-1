@@ -154,4 +154,23 @@ void main()
 // 상수로 선언한 포인터는 해당 변수의 값을 변경할 수 있지만, 다른 변수의
 // 주소를 새로 저장할 수는 없습니다. 
 #pragma endregion
+
+#pragma region 허상 포인터
+// 이미 해제된 메모리 영역을 가리키는 포인터입니다.
+
+	//	int * address = NULL;
+	//	
+	//	{
+	//		int room = 10;
+	//	
+	//		address = &room;
+	//	
+	//		*address = 30;
+	//	
+	//		printf("address가 가리키고 있는 값 : %d\n", *address);
+	//	}
+	//	
+	//	printf("address가 가리키고 있는 값 : %d\n", *address);
+
+#pragma endregion
 }
