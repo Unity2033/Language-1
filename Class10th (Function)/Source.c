@@ -82,6 +82,31 @@ void Average(int count, ...)
 	va_end(pointer);
 }
 
+int Add(int x, int y)
+{
+	return x + y;
+}
+
+int Subtract(int x, int y)
+{
+	return x - y;
+}
+
+int Multiply(int x, int y)
+{
+	return x * y;
+}
+
+int Divide(int x, int y)
+{
+	return x / y;
+}
+
+void Provide()
+{
+	printf("Provide\n");
+}
+
 int main()
 {
 #pragma region 함수
@@ -171,6 +196,25 @@ int main()
 	// Average(5, 10, 20, 30, 40, 50);
 
 #pragma endregion
+
+#pragma region 함수 포인터
+	// 함수의 주소 값을 저장하고 가리킬 수 있는
+	// 포인터 변수입니다.
+
+	void (*functionPointer)();
+
+	functionPointer = Provide;
+
+	printf("Add의 주소 : %p\n", Add);
+
+	functionPointer();
+
+	// 함수 포인터는 함수의 반환형과 매개 변수의 타입이
+	// 일치해야 하며, 함수 포인터를 사용하여 동적으로
+	// 메모리를 할당할 수 없습니다.
+
+#pragma endregion
+
 
 	return 0;
 }

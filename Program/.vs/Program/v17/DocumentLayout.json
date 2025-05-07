@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\Game-Academy\\Program\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E249B4A1-C649-4EA5-B85E-AB078056BA21}|..\\Class10th (Function)\\Class10th (Function).vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Academy\\Class10th (Function)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5134C898-F76C-4DA3-A3B5-E233E380839A}|Program.vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Academy\\Program\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5134C898-F76C-4DA3-A3B5-E233E380839A}|Program.vcxproj|solutionrelative:Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -15,9 +18,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{922EB901-45AC-433D-BB69-73D638F6214A}|..\\Class12th (Dynamic Allocation)\\Class12th (Dynamic Allocation).vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Academy\\Class12th (Dynamic Allocation)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E249B4A1-C649-4EA5-B85E-AB078056BA21}|..\\Class10th (Function)\\Class10th (Function).vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Academy\\Class10th (Function)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6A8685C9-5B01-4FE0-902D-3CC7A4E06D96}|..\\Class11th (Storage)\\Class11th (Storage).vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Academy\\Class11th (Storage)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
@@ -51,7 +51,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -75,7 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "audio.h",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Academy\\Program\\audio.h",
               "RelativeDocumentMoniker": "audio.h",
@@ -83,12 +83,11 @@
               "RelativeToolTip": "audio.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-06T12:26:54.172Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T12:26:54.172Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Source.c",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Academy\\Class12th (Dynamic Allocation)\\Source.c",
               "RelativeDocumentMoniker": "..\\Class12th (Dynamic Allocation)\\Source.c",
@@ -96,8 +95,7 @@
               "RelativeToolTip": "..\\Class12th (Dynamic Allocation)\\Source.c",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-05-06T11:10:36.927Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T11:10:36.927Z"
             },
             {
               "$type": "Document",
@@ -113,15 +111,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Source.c",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Academy\\Class10th (Function)\\Source.c",
               "RelativeDocumentMoniker": "..\\Class10th (Function)\\Source.c",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Academy\\Class10th (Function)\\Source.c",
               "RelativeToolTip": "..\\Class10th (Function)\\Source.c",
-              "ViewState": "AQIAADsAAAAAAAAAAAAAAB0AAAABAAAA",
+              "ViewState": "AQIAAL8AAAAAAAAAAAAkwNMAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-04-29T12:22:20.06Z"
+              "WhenOpened": "2025-04-29T12:22:20.06Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -149,13 +148,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Source.c",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Academy\\Program\\Source.c",
               "RelativeDocumentMoniker": "Source.c",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Academy\\Program\\Source.c",
               "RelativeToolTip": "Source.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAKAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAACAAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-04-23T12:34:55.456Z",
               "EditorCaption": ""
@@ -210,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Source.c",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Academy\\Class8th (Pointer)\\Source.c",
               "RelativeDocumentMoniker": "..\\Class8th (Pointer)\\Source.c",
@@ -218,8 +217,7 @@
               "RelativeToolTip": "..\\Class8th (Pointer)\\Source.c",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAK4AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-04-23T11:10:09.243Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-23T11:10:09.243Z"
             },
             {
               "$type": "Document",
