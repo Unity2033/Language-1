@@ -201,20 +201,37 @@ int main()
 	// 함수의 주소 값을 저장하고 가리킬 수 있는
 	// 포인터 변수입니다.
 
-	void (*functionPointer)();
-
-	functionPointer = Provide;
-
-	printf("Add의 주소 : %p\n", Add);
-
-	functionPointer();
+	// void (*functionPointer)();
+	// 
+	// functionPointer = Provide;
+	// 
+	// printf("Add의 주소 : %p\n", Add);
+	// 
+	// functionPointer();
+	// 
+	// int (*operator)(int, int);
+	// 
+	// operator = Add;
+	// 
+	// printf("Operator(5,5)의 값 : %d\n", operator(5, 5));
+	// 
+	// operator = Subtract;
+	// 
+	// printf("Operator(5,5)의 값 : %d\n", operator(5, 5));
+	// 
+	// operator = Multiply;
+	// 
+	// printf("Operator(5,5)의 값 : %d\n", operator(5, 5));
+	// 
+	// operator = Divide;
+	// 
+	// printf("Operator(5,5)의 값 : %d\n", operator(5, 5));
 
 	// 함수 포인터는 함수의 반환형과 매개 변수의 타입이
 	// 일치해야 하며, 함수 포인터를 사용하여 동적으로
 	// 메모리를 할당할 수 없습니다.
 
 #pragma endregion
-
 
 	return 0;
 }
