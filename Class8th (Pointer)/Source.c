@@ -79,40 +79,44 @@ void main()
 #pragma endregion
 
 #pragma region 범용 포인터
-	// 자료형이 정해지지 않은 상태로 모든 자료형을
-	// 저장할 수 있는 포인터입니다.
+   // 자료형이 정해지지 않은 상태로 모든 자료형을
+   // 저장할 수 있는 포인터입니다.
 
-	// char character = 'A';
-	// int integer = 10;
-	// float decimal = 1.0f;
-	// 
-	// void * reference = &character;
-	// 
-	// // 범용 포인터는 메모리 주소에 접근해서 값을 변경
-	// // 할 수 없습니다.
-	// 
-	// *(char *)reference = 'B';
-	// 
-	// printf("character 변수의 값 : %c\n", character);
-	// printf("reference 변수의 값 : %p\n\n", reference);
-	// 
-	// reference = &integer;
-	// 
-	// *(int *)reference = 20;
-	// 
-	// printf("integer 변수의 값 : %d\n", integer);
-	// printf("reference 변수의 값 : %p\n\n", reference);
-	// 
-	// reference = &decimal;
-	// 
-	// *(float*)reference = 5.0f;
-	// 
-	// printf("decimal 변수의 값 : %f\n", decimal);
-	// printf("reference 변수의 값 : %p\n\n", reference);
+   // char rank = 'A';
+   // int count = 10;
+   // float angle = 3.14f;
+   // 
+   // void * reference = NULL;
+   // 
+   // reference = &rank;
+   // 
+   // // 범용 포인터는 메모리 주소에 접근해서 값을
+   // // 변경할 수 없습니다.
+   // 
+   // *(char *)reference = 'B';
+   // 
+   // printf("rank 변수의 값 : %c\n", rank);
+   // printf("reference 변수의 값 : %p\n\n", reference);
+   // 
+   // reference = &count;
+   // 
+   // *(int*)reference = 50;
+   // 
+   // printf("count 변수의 값 : %d\n", count);
+   // printf("reference 변수의 값 : %p\n\n", reference);
+   // 
+   // reference = &angle;
+   // 
+   // *(float*)reference = 45.5f;
+   // 
+   // printf("angle 변수의 값 : %f\n", angle);
+   // printf("reference 변수의 값 : %p\n\n", reference);
 
-	// 범용 포인터로 변수의 메모리에 접근하려면 범용 포인터가
-	// 가리키는 변수의 자료형으로 형 변환을 해주어야 합니다. 
+   // 범용 포인터로 변수의 메모리에 접근하려면 범용 포인터가
+   // 가리키는 변수의 자료형으로 형 변환해주어야 합니다.
 #pragma endregion
+
+
 
 #pragma region 상수 지시 포인터
 // 포인터가 가리키는 주소에 저장되어 있는 값을 변경할 수 없도록

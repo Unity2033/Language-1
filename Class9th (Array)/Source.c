@@ -27,7 +27,7 @@ void main()
 
 	//	int array[ ] = { 1, 2, 3, 4, 5 };
 	//	
-	//	int size = sizeof(array) / sizeof(int);
+	//	int size = sizeof(array) / sizeof(array[0]);
 	//	
 	//	int * pointer = &array;
 	//	
